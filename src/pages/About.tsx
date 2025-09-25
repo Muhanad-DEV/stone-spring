@@ -46,6 +46,77 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Strategic Objectives Section */}
+      <section className="strategic-objectives-section strategic-objectives--alt" style={{ 
+        backgroundImage: 'url("/vision-mission-bg.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh',
+        width: '100vw',
+        marginLeft: 'calc(-50vw + 50%)',
+        marginRight: 'calc(-50vw + 50%)',
+        padding: '60px 0'
+      }}>
+        <div className="objectives-container">
+          <h2 className="objectives-title">Strategic Objectives aligned with Oman Vision 2040:</h2>
+          
+          <div className="objectives-grid">
+            {/* Objective 1: Economy & Development */}
+            <div className="objective-item">
+              <div className="objective-icon">
+                <img src="/Vector1.png" alt="Economy & Development icon" className="objective-icon-img"/>
+              </div>
+              <div className="objective-content">
+                <div className="objective-bar">ECONOMY & DEVELOPMENT</div>
+                <div className="objective-body">
+                  <p className="objective-description">Enhance the added value of Omani mineral resources and diversify national income sources.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Objective 2: Sustainable Environment */}
+            <div className="objective-item">
+              <div className="objective-icon">
+                <img src="/vector-2.png" alt="Sustainable Environment icon" className="objective-icon-img"/>
+              </div>
+              <div className="objective-content">
+                <div className="objective-bar">SUSTAINABLE ENVIRONMENT</div>
+                <div className="objective-body">
+                  <p className="objective-description">Commit to industrial practices that minimize environmental impact and optimize resource usage.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Objective 3: People & Society */}
+            <div className="objective-item">
+              <div className="objective-icon">
+                <img src="/vector-3.png" alt="People & Society icon" className="objective-icon-img"/>
+              </div>
+              <div className="objective-content">
+                <div className="objective-bar">PEOPLE & SOCIETY</div>
+                <div className="objective-body">
+                  <p className="objective-description">Create a productive workplace that nurtures local talent and increases Omanization rates.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Objective 4: Governance & Excellence */}
+            <div className="objective-item">
+              <div className="objective-icon">
+                <img src="/vector-4.png" alt="Governance & Excellence icon" className="objective-icon-img"/>
+              </div>
+              <div className="objective-content">
+                <div className="objective-bar">GOVERNANCE & EXCELLENCE</div>
+                <div className="objective-body">
+                  <p className="objective-description">Adopt global quality standards and achieve high operational efficiency.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import AboutOman from './pages/AboutOman';
 import Message from './pages/Message';
+import WhyChooseUs from './pages/WhyChooseUs';
 import Products from './pages/Products';
 import ProductionTechnology from './pages/ProductionTechnology';
 import Contact from './pages/Contact';
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/about-oman" element={<AboutOman />} />
           <Route path="/message" element={<Message />} />
+          <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/products" element={<Products />} />
           <Route path="/production-technology" element={<ProductionTechnology />} />
           <Route path="/contact" element={<Contact />} />

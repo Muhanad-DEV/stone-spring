@@ -65,34 +65,6 @@ const Message: React.FC = () => {
         </div>
       </section>
 
-      {/* Vision & Mission Section */}
-      <section className="vision-mission-section">
-        <div className="vision-mission-container">
-          <div className="vision-mission-content">
-            {/* Vision */}
-            <div className="vision-block">
-              <h2 className="vision-title">
-                <div className="title-marker"></div>
-                VISION
-              </h2>
-              <p className="vision-text">
-                To lead with sustainable mineral solutions that inspire industries regionally and globally.
-              </p>
-            </div>
-
-            {/* Mission */}
-            <div className="mission-block">
-              <h2 className="mission-title">
-                <div className="title-marker"></div>
-                MISSION
-              </h2>
-              <p className="mission-text">
-                Transforming mineral resources into world-class products that create value, empower industries, and promote sustainable growth regionally and globally.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 };

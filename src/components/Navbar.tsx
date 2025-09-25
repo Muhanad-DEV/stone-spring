@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   const isActive = (path: string) => location.pathname === path;
-  const isAboutActive = () => ['/about', '/about-oman', '/message'].includes(location.pathname);
+  const isAboutActive = () => ['/about', '/about-oman', '/message', '/why-choose-us'].includes(location.pathname);
   const isServicesActive = () => ['/products', '/production-technology'].includes(location.pathname);
 
   return (
@@ -69,8 +69,8 @@ const Navbar: React.FC = () => {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li>
-                  <Link className={`dropdown-item ${isActive('/about-oman') ? 'active' : ''}`} to="/about-oman">
-                    ABOUT OMAN
+                  <Link className={`dropdown-item ${isActive('/message') ? 'active' : ''}`} to="/message">
+                    MESSAGE
                   </Link>
                 </li>
                 <li>
@@ -79,8 +79,13 @@ const Navbar: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className={`dropdown-item ${isActive('/message') ? 'active' : ''}`} to="/message">
-                    MESSAGE
+                  <Link className={`dropdown-item ${isActive('/about-oman') ? 'active' : ''}`} to="/about-oman">
+                    ABOUT OMAN
+                  </Link>
+                </li>
+                <li>
+                  <Link className={`dropdown-item ${isActive('/why-choose-us') ? 'active' : ''}`} to="/why-choose-us">
+                    WHY CHOOSE US
                   </Link>
                 </li>
               </ul>
