@@ -57,16 +57,15 @@ const Navbar: React.FC = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item dropdown">
-              <a 
+              <button 
                 className={`nav-link dropdown-toggle ${isAboutActive() ? 'active' : ''}`} 
-                href="#" 
                 id="navbarDropdownMenuLink" 
-                role="button" 
                 data-bs-toggle="dropdown" 
                 aria-expanded="false"
+                style={{ background: 'none', border: 'none', color: 'inherit' }}
               >
                 ABOUT US
-              </a>
+              </button>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li>
                   <Link className={`dropdown-item ${isActive('/message') ? 'active' : ''}`} to="/message">
@@ -91,16 +90,15 @@ const Navbar: React.FC = () => {
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <a 
+              <button 
                 className={`nav-link dropdown-toggle ${isServicesActive() ? 'active' : ''}`} 
-                href="#" 
                 id="navbarDropdownMenuLink2" 
-                role="button" 
                 data-bs-toggle="dropdown" 
                 aria-expanded="false"
+                style={{ background: 'none', border: 'none', color: 'inherit' }}
               >
                 SERVICES
-              </a>
+              </button>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
                 <li>
                   <Link className={`dropdown-item ${isActive('/products') ? 'active' : ''}`} to="/products">
