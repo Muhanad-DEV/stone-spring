@@ -47,6 +47,72 @@ const About: React.FC = () => {
         </div>
       </section>
 
+      {/* Vision & Mission Section */}
+      <section className="vision-mission-section" style={{ 
+        marginTop: '0', 
+        paddingTop: '40px',
+        paddingBottom: '40px',
+        backgroundColor: '#f8f9fa',
+        minHeight: '300px'
+      }}>
+        <div className="vision-mission-container">
+          <div className="vision-mission-content" style={{ 
+            display: 'flex', 
+            justifyContent: 'space-around', 
+            alignItems: 'center',
+            maxWidth: '1200px',
+            margin: '0 auto',
+            padding: '0 20px'
+          }}>
+            {/* Vision */}
+            <div className="vision-block" style={{ 
+              flex: '1', 
+              margin: '0 20px',
+              textAlign: 'center'
+            }}>
+              <h2 className="vision-title" style={{ 
+                color: '#333',
+                fontSize: '24px',
+                marginBottom: '15px'
+              }}>
+                <div className="title-marker"></div>
+                VISION
+              </h2>
+              <p className="vision-text" style={{ 
+                color: '#666',
+                fontSize: '16px',
+                lineHeight: '1.6'
+              }}>
+                To lead with sustainable mineral solutions that inspire industries regionally and globally.
+              </p>
+            </div>
+
+            {/* Mission */}
+            <div className="mission-block" style={{ 
+              flex: '1', 
+              margin: '0 20px',
+              textAlign: 'center'
+            }}>
+              <h2 className="mission-title" style={{ 
+                color: '#333',
+                fontSize: '24px',
+                marginBottom: '15px'
+              }}>
+                <div className="title-marker"></div>
+                MISSION
+              </h2>
+              <p className="mission-text" style={{ 
+                color: '#666',
+                fontSize: '16px',
+                lineHeight: '1.6'
+              }}>
+                Transforming mineral resources into world-class products that create value, empower industries, and promote sustainable growth regionally and globally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Strategic Objectives Section */}
       <section className="strategic-objectives-section strategic-objectives--alt" style={{ 
         backgroundImage: 'url("/vision-mission-bg.png")',
