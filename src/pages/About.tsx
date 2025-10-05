@@ -48,197 +48,94 @@ const About: React.FC = () => {
       </section>
 
       {/* Vision & Mission Section */}
-      <div style={{ 
-        padding: '60px 20px',
-        backgroundColor: '#f8f9fa',
-        textAlign: 'center'
-      }}>
-        <div style={{ 
-          maxWidth: '1200px',
-          margin: '0 auto',
-          display: 'flex',
-          gap: '60px',
-          justifyContent: 'center'
-        }}>
-          {/* Vision */}
-          <div style={{ 
-            flex: '1',
-            backgroundColor: 'white',
-            padding: '40px 30px',
-            borderRadius: '10px',
-            boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
-          }}>
-            <h2 style={{ 
-              color: '#2c3e50',
-              fontSize: '28px',
-              marginBottom: '20px',
-              fontWeight: 'bold'
-            }}>
-              VISION
-            </h2>
-            <p style={{ 
-              color: '#555',
-              fontSize: '18px',
-              lineHeight: '1.6'
-            }}>
-              To lead with sustainable mineral solutions that inspire industries regionally and globally.
-            </p>
-          </div>
+      <section className="vision-mission-section animate-in">
+        <div className="vision-mission-container">
+          <div className="vision-mission-content">
+            {/* Vision */}
+            <div className="vision-block">
+              <h2 className="vision-title">
+                <div className="title-marker"></div>
+                VISION
+              </h2>
+              <p className="vision-text">
+                To lead with sustainable mineral solutions that inspire industries regionally and globally.
+              </p>
+            </div>
 
-          {/* Mission */}
-          <div style={{ 
-            flex: '1',
-            backgroundColor: 'white',
-            padding: '40px 30px',
-            borderRadius: '10px',
-            boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
-          }}>
-            <h2 style={{ 
-              color: '#2c3e50',
-              fontSize: '28px',
-              marginBottom: '20px',
-              fontWeight: 'bold'
-            }}>
-              MISSION
-            </h2>
-            <p style={{ 
-              color: '#555',
-              fontSize: '18px',
-              lineHeight: '1.6'
-            }}>
-              Transforming mineral resources into world-class products that create value, empower industries, and promote sustainable growth regionally and globally.
-            </p>
+            {/* Mission */}
+            <div className="mission-block">
+              <h2 className="mission-title">
+                <div className="title-marker"></div>
+                MISSION
+              </h2>
+              <p className="mission-text">
+                Transforming mineral resources into world-class products that create value, empower industries, and promote sustainable growth regionally and globally.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Strategic Objectives Section */}
-      <div style={{ 
-        backgroundImage: 'url("/vision-mission-bg.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        padding: '80px 20px',
-        textAlign: 'center',
-        color: 'white'
-      }}>
-        <div style={{ 
-          maxWidth: '1200px',
-          margin: '0 auto'
-        }}>
-          <h2 style={{ 
-            fontSize: '32px',
-            marginBottom: '50px',
-            fontWeight: 'bold',
-            textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
-          }}>
-            Strategic Objectives aligned with Oman Vision 2040:
-          </h2>
+      <section className="strategic-objectives-section strategic-objectives--alt">
+        <div className="objectives-container">
+          <h2 className="objectives-title">Strategic Objectives aligned with Oman Vision 2040:</h2>
           
-          <div style={{ 
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-            gap: '30px',
-            marginTop: '40px'
-          }}>
+          <div className="objectives-grid">
             {/* Objective 1: Economy & Development */}
-            <div style={{ 
-              backgroundColor: 'rgba(255,255,255,0.1)',
-              padding: '30px',
-              borderRadius: '10px',
-              backdropFilter: 'blur(10px)'
-            }}>
-              <div style={{ 
-                fontSize: '18px',
-                fontWeight: 'bold',
-                marginBottom: '15px',
-                color: '#fff'
-              }}>
-                ECONOMY & DEVELOPMENT
+            <div className="objective-item">
+              <div className="objective-icon">
+                <img src="/Vector1.png" alt="Economy & Development icon" className="objective-icon-img"/>
               </div>
-              <p style={{ 
-                fontSize: '16px',
-                lineHeight: '1.6',
-                color: '#f0f0f0'
-              }}>
-                Enhance the added value of Omani mineral resources and diversify national income sources.
-              </p>
+              <div className="objective-content">
+                <div className="objective-bar">ECONOMY & DEVELOPMENT</div>
+                <div className="objective-body">
+                  <p className="objective-description">Enhance the added value of Omani mineral resources and diversify national income sources.</p>
+                </div>
+              </div>
             </div>
 
             {/* Objective 2: Sustainable Environment */}
-            <div style={{ 
-              backgroundColor: 'rgba(255,255,255,0.1)',
-              padding: '30px',
-              borderRadius: '10px',
-              backdropFilter: 'blur(10px)'
-            }}>
-              <div style={{ 
-                fontSize: '18px',
-                fontWeight: 'bold',
-                marginBottom: '15px',
-                color: '#fff'
-              }}>
-                SUSTAINABLE ENVIRONMENT
+            <div className="objective-item">
+              <div className="objective-icon">
+                <img src="/vector-2.png" alt="Sustainable Environment icon" className="objective-icon-img"/>
               </div>
-              <p style={{ 
-                fontSize: '16px',
-                lineHeight: '1.6',
-                color: '#f0f0f0'
-              }}>
-                Commit to industrial practices that minimize environmental impact and optimize resource usage.
-              </p>
+              <div className="objective-content">
+                <div className="objective-bar">SUSTAINABLE ENVIRONMENT</div>
+                <div className="objective-body">
+                  <p className="objective-description">Commit to industrial practices that minimize environmental impact and optimize resource usage.</p>
+                </div>
+              </div>
             </div>
 
             {/* Objective 3: People & Society */}
-            <div style={{ 
-              backgroundColor: 'rgba(255,255,255,0.1)',
-              padding: '30px',
-              borderRadius: '10px',
-              backdropFilter: 'blur(10px)'
-            }}>
-              <div style={{ 
-                fontSize: '18px',
-                fontWeight: 'bold',
-                marginBottom: '15px',
-                color: '#fff'
-              }}>
-                PEOPLE & SOCIETY
+            <div className="objective-item">
+              <div className="objective-icon">
+                <img src="/vector-3.png" alt="People & Society icon" className="objective-icon-img"/>
               </div>
-              <p style={{ 
-                fontSize: '16px',
-                lineHeight: '1.6',
-                color: '#f0f0f0'
-              }}>
-                Create a productive workplace that nurtures local talent and increases Omanization rates.
-              </p>
+              <div className="objective-content">
+                <div className="objective-bar">PEOPLE & SOCIETY</div>
+                <div className="objective-body">
+                  <p className="objective-description">Create a productive workplace that nurtures local talent and increases Omanization rates.</p>
+                </div>
+              </div>
             </div>
 
             {/* Objective 4: Governance & Excellence */}
-            <div style={{ 
-              backgroundColor: 'rgba(255,255,255,0.1)',
-              padding: '30px',
-              borderRadius: '10px',
-              backdropFilter: 'blur(10px)'
-            }}>
-              <div style={{ 
-                fontSize: '18px',
-                fontWeight: 'bold',
-                marginBottom: '15px',
-                color: '#fff'
-              }}>
-                GOVERNANCE & EXCELLENCE
+            <div className="objective-item">
+              <div className="objective-icon">
+                <img src="/vector-4.png" alt="Governance & Excellence icon" className="objective-icon-img"/>
               </div>
-              <p style={{ 
-                fontSize: '16px',
-                lineHeight: '1.6',
-                color: '#f0f0f0'
-              }}>
-                Adopt global quality standards and achieve high operational efficiency.
-              </p>
+              <div className="objective-content">
+                <div className="objective-bar">GOVERNANCE & EXCELLENCE</div>
+                <div className="objective-body">
+                  <p className="objective-description">Adopt global quality standards and achieve high operational efficiency.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

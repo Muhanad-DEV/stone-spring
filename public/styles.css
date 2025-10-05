@@ -1317,8 +1317,25 @@ body.message-page::after {
 }
 
 /* Alternate Styling JUST for About Oman (scoped by .strategic-objectives--alt) */
+
 .strategic-objectives--alt {
-    background: linear-gradient(180deg, rgba(26, 42, 79, 0.97) 0%, rgba(26, 42, 79, 0.92) 40%, rgba(247, 247, 247, 0.95) 40%, rgba(247, 247, 247, 0.95) 100%);
+    /* Semi-transparent navy overlay so the background image shows through */
+    background: rgba(26, 42, 79, 0.85);
+}
+
+/* Remove the background image overlay for this variant to keep color uniform */
+.strategic-objectives--alt::before {
+    /* Re-enable a full-bleed background image behind the content */
+    display: block;
+    left: 0;                 /* cover entire section */
+    right: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url('/vision-mission-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.25;           /* subtle visibility like before */
 }
 
 .strategic-objectives--alt .objectives-title {
